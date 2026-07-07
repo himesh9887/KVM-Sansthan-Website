@@ -1,10 +1,20 @@
-# TODO
+# TODO - Navbar redesign (Navbar.jsx only)
 
-## Dependency conflict: react-helmet-async vs React 19
-- [ ] Update `package.json` to use a `react-helmet-async` version compatible with React 19
-- [ ] Run `npm install` to regenerate `package-lock.json`
-- [ ] Run `npm run build` to verify Vite build succeeds
+- [x] Gather current Navbar/TopBar/Layout/site constants.
+- [x] Redesign Navbar per spec: remove glass/borders/transparency; solid white sticky; 78px height; soft shadow + light bottom border.
 
-## CI validation
-- [ ] Re-run Vercel build (or check npm install step) to confirm ERESOLVE is gone
+- [x] Left section: 48px rounded square logo container with soft shadow; institute name 16px bold single line (no wrap); green tagline 11px below.
+
+- [x] Center section: desktop menu with 28px spacing; 15px/600 text; dark slate default; hover + active primary blue; subtle animated underline; no wrapping.
+
+- [x] Right section: Admission CTA with 48px height, px-[26px], rounded 14px, soft shadow and hover lift.
+
+- [x] Scroll effect: keep white background always; only shadow changes.
+
+- [x] Mobile: premium slide drawer with dark overlay + scroll lock; subtle framer-motion.
+
+- [x] Accessibility: keyboard focus states; ARIA labels.
+
+- [x] Quick manual verification at target breakpoints.
+
 
