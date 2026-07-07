@@ -8,12 +8,14 @@ import ProgressBar from './ProgressBar';
 import FloatingActions from './FloatingActions';
 import ScrollTop from './ScrollTop';
 import Loader from './Loader';
+import ScrollToTop from './ScrollToTop';
 
 export default function Layout({ children }) {
   const location = useLocation();
   return (
     <>
       <ProgressBar />
+      <ScrollToTop />
       <div className="fixed inset-x-0 top-0 z-50"><TopBar /></div>
       <Navbar />
       <AnimatePresence mode="wait">
