@@ -13,9 +13,9 @@ export default function ScrollTop() {
       type="button"
       aria-label="Back to top"
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-      className={`focus-ring fixed bottom-36 right-4 z-40 flex h-12 w-12 items-center justify-center rounded-lg bg-dark text-white shadow-premium transition duration-300 hover:-translate-y-1 hover:bg-primary md:right-6 ${show ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-4 opacity-0'}`}
+      className={`focus-ring fixed bottom-[calc(env(safe-area-inset-bottom)+9.75rem)] right-4 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-dark text-white shadow-premium transition duration-300 hover:-translate-y-1.5 hover:bg-primary active:translate-y-0 md:right-6 ${show ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-4 opacity-0'}`}
     >
-      <ArrowUp size={20} />
+      <ArrowUp size={22} />
     </button>
   );
 }
