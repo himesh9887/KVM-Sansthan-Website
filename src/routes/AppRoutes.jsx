@@ -1,15 +1,13 @@
-import { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
-
-const Home = lazy(() => import('@/pages/Home'));
-const About = lazy(() => import('@/pages/About'));
-const SpecialSchool = lazy(() => import('@/pages/SpecialSchool'));
-const ProfessionalCourses = lazy(() => import('@/pages/ProfessionalCourses'));
-const Gallery = lazy(() => import('@/pages/Gallery'));
-const Events = lazy(() => import('@/pages/Events'));
-const Notice = lazy(() => import('@/pages/Notice'));
-const Contact = lazy(() => import('@/pages/Contact'));
-const NotFound = lazy(() => import('@/pages/NotFound'));
+import Home from '@/pages/Home';
+import About from '@/pages/About';
+import SpecialSchool from '@/pages/SpecialSchool';
+import ProfessionalCourses from '@/pages/ProfessionalCourses';
+import Gallery from '@/pages/Gallery';
+import Events from '@/pages/Events';
+import Notice from '@/pages/Notice';
+import Contact from '@/pages/Contact';
+import NotFound from '@/pages/NotFound';
 
 export default function AppRoutes() {
   return (
