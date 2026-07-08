@@ -3,10 +3,10 @@ export const site = {
   tagline: 'Empowering Every Child. Creating Independent Lives.',
   established: '2001',
   location: 'Alwar, Rajasthan',
-  phone: '+91 94140 00000',
-  email: 'info@kmvsansthan.org',
+  phone: '+91 9414240645',
+  email: 'Kmvsansthan@gmail.com',
   address: 'B Block, Budh Vihar, Alwar, Rajasthan',
-  whatsapp: '919414000000',
+  whatsapp: '919414240645',
   social: {
     facebook: 'https://facebook.com/',
     instagram: 'https://instagram.com/',
