@@ -20,17 +20,25 @@ export default function Home() {
       <Hero />
       <section className="section-pad bg-background"><Container><Stats /></Container></section>
       <section className="section-pad bg-white">
-        <Container className="grid items-center gap-10 lg:grid-cols-2">
-          <motion.div variants={fadeRight} initial="hidden" whileInView="visible" viewport={viewport} transition={{ duration: 0.6 }}>
-            <SectionTitle align="left" eyebrow="About the Institute" title="A trusted place for special education, therapy and teacher preparation." text="Since 2001, Karam Manovikas Sansthan has supported children with special needs through structured learning, therapy, life-skills training and family guidance." />
-            <div className="grid gap-3 sm:grid-cols-2">
-              {['Individual Education Plan', 'Parents Support', 'Vocational Skills', 'RCI-Oriented Courses'].map((item) => <p key={item} className="flex items-center gap-2 font-bold text-slate-700"><CheckCircle2 className="text-success" size={20} />{item}</p>)}
+        <Container className="grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] xl:gap-16">
+          <motion.div variants={fadeRight} initial="hidden" whileInView="visible" viewport={viewport} transition={{ duration: 0.6 }} className="max-w-2xl">
+            <SectionTitle
+              align="left"
+              eyebrow="About the Institute"
+              title="Special education, therapy and teacher training under one roof."
+              text="Since 2001, Karam Manovikas Sansthan has helped children with special needs learn, communicate and build independence through structured education, therapy, family guidance and vocational support."
+              className="mb-8 max-w-none"
+              titleClassName="max-w-xl text-3xl md:text-4xl lg:text-[2.65rem]"
+              textClassName="max-w-2xl"
+            />
+            <div className="grid gap-4 sm:grid-cols-2">
+              {['Individual Education Plans', 'Parent Support', 'Vocational Skills', 'RCI-Oriented Courses'].map((item) => <p key={item} className="flex items-center gap-3 text-base font-bold leading-6 text-slate-700"><CheckCircle2 className="h-5 w-5 shrink-0 text-success" />{item}</p>)}
             </div>
             <Button to="/about" className="mt-8">Know More</Button>
           </motion.div>
-          <motion.div variants={fadeLeft} initial="hidden" whileInView="visible" viewport={viewport} className="grid grid-cols-2 gap-4">
-            <img src="/images/award-ceremony.jpeg" alt="Award ceremony at Karam Manovikas Sansthan" className="h-72 w-full rounded-card object-cover shadow-soft" loading="lazy" />
-            <img src="/images/student-performance.jpeg" alt="Students performing at school event" className="mt-10 h-72 w-full rounded-card object-cover shadow-soft" loading="lazy" />
+          <motion.div variants={fadeLeft} initial="hidden" whileInView="visible" viewport={viewport} className="grid gap-4 sm:grid-cols-2 lg:gap-5">
+            <img src="/images/award-ceremony.jpeg" alt="Award ceremony at Karam Manovikas Sansthan" className="aspect-[4/3] h-full min-h-[220px] w-full rounded-card object-cover object-center shadow-soft sm:min-h-[260px] lg:min-h-[320px]" loading="lazy" />
+            <img src="/images/student-performance.jpeg" alt="Students performing at school event" className="aspect-[4/3] h-full min-h-[220px] w-full rounded-card object-cover object-center shadow-soft sm:min-h-[260px] lg:min-h-[320px]" loading="lazy" />
           </motion.div>
         </Container>
       </section>

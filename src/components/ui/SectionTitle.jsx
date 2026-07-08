@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { fadeUp, viewport } from '@/utils/animations';
 import { cn } from '@/utils/cn';
 
-export default function SectionTitle({ eyebrow, title, text, align = 'center', className }) {
+export default function SectionTitle({ eyebrow, title, text, align = 'center', className, titleClassName, textClassName }) {
   return (
     <motion.div
       variants={fadeUp}
@@ -13,8 +13,8 @@ export default function SectionTitle({ eyebrow, title, text, align = 'center', c
       className={cn('mx-auto mb-10 max-w-3xl', align === 'center' ? 'text-center' : 'text-left', className)}
     >
       {eyebrow && <p className="mb-3 text-sm font-extrabold uppercase tracking-[0.16em] text-secondary">{eyebrow}</p>}
-      <h2 className="font-heading text-3xl font-extrabold text-dark md:text-5xl">{title}</h2>
-      {text && <p className="mt-5 text-base leading-8 text-muted md:text-lg">{text}</p>}
+      <h2 className={cn('font-heading text-3xl font-extrabold leading-tight text-dark md:text-4xl lg:text-5xl', titleClassName)}>{title}</h2>
+      {text && <p className={cn('mt-5 text-base leading-8 text-muted md:text-lg', textClassName)}>{text}</p>}
     </motion.div>
   );
 }

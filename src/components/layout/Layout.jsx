@@ -11,7 +11,7 @@ export default function Layout({ children }) {
     <>
       <ProgressBar />
       <ScrollToTop />
-      <div className="fixed inset-x-0 top-0 z-50"><TopBar /></div>
+      <div className="fixed left-0 top-0 z-50 w-full"><TopBar /></div>
       <Navbar />
       <main className="min-h-screen bg-background">
         {children}

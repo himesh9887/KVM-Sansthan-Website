@@ -12,7 +12,6 @@ import {
   Home,
   LifeBuoy,
   MapPinned,
-  Medal,
   Mic,
   Palette,
   PhoneCall,

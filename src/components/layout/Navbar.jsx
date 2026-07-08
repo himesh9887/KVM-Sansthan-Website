@@ -8,14 +8,6 @@ import { cn } from '@/utils/cn';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 12);
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
@@ -25,7 +17,7 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <header className={cn('fixed left-0 right-0 top-0 z-50 transition-all duration-300 lg:top-8', scrolled ? 'bg-white/92 shadow-soft backdrop-blur-2xl' : 'bg-white/78 backdrop-blur-xl')}>
+    <header className="fixed left-0 top-0 z-50 w-full border-b border-slate-200/80 bg-white shadow-soft transition-all duration-300 lg:top-8">
       <nav className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-4 sm:px-6 lg:h-[76px] lg:px-8">
         <Link to="/" className="focus-ring group flex min-w-0 items-center gap-3 rounded-lg" onClick={() => setOpen(false)}>
           <span className="grid h-12 w-12 shrink-0 place-items-center rounded-lg bg-white shadow-sm ring-1 ring-slate-200 transition group-hover:shadow-soft">
@@ -36,7 +28,7 @@ export default function Navbar() {
             <span className="hidden text-xs font-bold text-secondary sm:block">Empowering Every Child</span>
           </span>
         </Link>
-        <div className="hidden items-center gap-1 rounded-full border border-slate-200/80 bg-white/72 p-1 shadow-sm lg:flex">
+        <div className="hidden items-center gap-1 rounded-full border border-slate-200/80 bg-slate-50 p-1 shadow-sm lg:flex">
           {navLinks.map((link) => (
             <NavLink
               key={link.path}
@@ -94,4 +86,3 @@ export default function Navbar() {
     </header>
   );
 }
-
