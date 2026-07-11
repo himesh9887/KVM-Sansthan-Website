@@ -37,8 +37,8 @@ export default function Home() {
             <Button to="/about" className="mt-8">Know More</Button>
           </motion.div>
           <motion.div variants={fadeLeft} initial="hidden" whileInView="visible" viewport={viewport} className="grid gap-4 sm:grid-cols-2 lg:gap-5">
-            <img src="/images/award-ceremony.jpeg" alt="Award ceremony at Karam Manovikas Sansthan" className="aspect-[4/3] h-full min-h-[220px] w-full rounded-card object-cover object-center shadow-soft sm:min-h-[260px] lg:min-h-[320px]" loading="lazy" />
-            <img src="/images/student-performance.jpeg" alt="Students performing at school event" className="aspect-[4/3] h-full min-h-[220px] w-full rounded-card object-cover object-center shadow-soft sm:min-h-[260px] lg:min-h-[320px]" loading="lazy" />
+            <img src="/images/award-ceremony.jpeg" alt="Award ceremony at Karam Manovikas Sansthan" className="aspect-[4/3] h-full min-h-[220px] w-full rounded-card object-cover object-center shadow-soft sm:min-h-[260px] lg:min-h-[320px]" loading="lazy" decoding="async" width="1200" height="900" />
+            <img src="/images/student-performance.jpeg" alt="Students performing at school event" className="aspect-[4/3] h-full min-h-[220px] w-full rounded-card object-cover object-center shadow-soft sm:min-h-[260px] lg:min-h-[320px]" loading="lazy" decoding="async" width="1200" height="900" />
           </motion.div>
         </Container>
       </section>
@@ -67,7 +67,7 @@ export default function Home() {
 function Hero() {
   return (
     <section className="relative isolate min-h-[92vh] overflow-hidden pt-32 text-white">
-      <img src="/images/campus-building.jpeg" alt="Karam Manovikas Sansthan campus" className="absolute inset-0 -z-20 h-full w-full object-cover" loading="eager" />
+      <img src="/images/campus-building.jpeg" alt="Karam Manovikas Sansthan campus" className="absolute inset-0 -z-20 h-full w-full object-cover" loading="eager" decoding="async" fetchPriority="high" width="1600" height="900" />
       <div className="absolute inset-0 -z-10 bg-slate-950/62" />
       <Container className="grid min-h-[calc(92vh-8rem)] items-center">
         <motion.div variants={stagger} initial="hidden" animate="visible" className="max-w-4xl">

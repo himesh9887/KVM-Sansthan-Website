@@ -56,6 +56,8 @@ export default function GalleryGrid({ preview = false }) {
                   alt={image.alt}
                   loading="lazy"
                   decoding="async"
+                  width="1200"
+                  height="900"
                   sizes="(min-width: 1024px) 33vw, (min-width: 420px) 50vw, 100vw"
                   className="h-full w-full object-cover transition duration-700 ease-out group-hover:scale-110"
                 />
@@ -95,7 +97,7 @@ export default function GalleryGrid({ preview = false }) {
                 <X size={20} />
               </button>
               <div className="grid bg-slate-950">
-                <img src={lightbox.src} alt={lightbox.alt} className="max-h-[78vh] w-full object-contain" />
+                <img src={lightbox.src} alt={lightbox.alt} decoding="async" width="1200" height="900" className="max-h-[78vh] w-full object-contain" />
               </div>
               <div className="bg-white p-5">
                 <p className="text-xs font-extrabold uppercase tracking-[0.14em] text-secondary">{lightbox.category}</p>
@@ -108,3 +110,5 @@ export default function GalleryGrid({ preview = false }) {
     </>
   );
 }
+
+

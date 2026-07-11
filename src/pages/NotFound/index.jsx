@@ -5,7 +5,7 @@ import Container from '@/components/ui/Container';
 export default function NotFound() {
   return (
     <>
-      <SEO title="Page Not Found" description="The requested page could not be found." />
+      <SEO title="Page Not Found" description="The requested page could not be found." path="/404" noIndex />
       <section className="grid min-h-screen place-items-center bg-background pt-24">
         <Container className="text-center">
           <p className="font-numbers text-8xl font-extrabold text-primary">404</p>
@@ -17,3 +17,5 @@ export default function NotFound() {
     </>
   );
 }
+
+

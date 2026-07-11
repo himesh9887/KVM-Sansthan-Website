@@ -4,7 +4,7 @@ import Card from '@/components/ui/Card';
 export default function EventCard({ event }) {
   return (
     <Card className="overflow-hidden p-0">
-      <img src={event.image} alt={event.title} loading="lazy" className="h-56 w-full object-cover" />
+      <img src={event.image} alt={event.title} loading="lazy" decoding="async" width="1200" height="675" className="h-56 w-full object-cover" />
       <div className="p-6">
         <p className="inline-flex items-center gap-2 rounded-lg bg-amber-50 px-3 py-1 text-xs font-extrabold uppercase tracking-[0.14em] text-amber-700">
           <CalendarDays size={15} /> {event.date}
@@ -15,3 +15,4 @@ export default function EventCard({ event }) {
     </Card>
   );
 }
+

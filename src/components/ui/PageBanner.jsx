@@ -4,7 +4,7 @@ import Container from './Container';
 export default function PageBanner({ title, text, image = '/images/campus-building.jpeg' }) {
   return (
     <section className="relative isolate overflow-hidden pt-40 text-white">
-      <img src={image} alt="" className="absolute inset-0 -z-20 h-full w-full object-cover" loading="eager" />
+      <img src={image} alt="" className="absolute inset-0 -z-20 h-full w-full object-cover" loading="eager" decoding="async" width="1600" height="700" />
       <div className="absolute inset-0 -z-10 bg-slate-950/68" />
       <Container className="pb-20 md:pb-28">
         <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65 }} className="max-w-3xl">
@@ -16,3 +16,4 @@ export default function PageBanner({ title, text, image = '/images/campus-buildi
     </section>
   );
 }
+
