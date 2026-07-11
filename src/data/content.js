@@ -208,12 +208,9 @@ export const events = [
   },
 ];
 
-export const notices = [
-  { title: 'Admission Enquiry Open for Special School', date: '7 July 2026', category: 'Admission', file: '/docs/prospectus.pptx' },
-  { title: 'Professional Course Prospectus Available', date: '5 July 2026', category: 'Courses', file: '/docs/prospectus.pptx' },
-  { title: 'Parent Review Meeting Schedule', date: '25 June 2026', category: 'Parents', file: '/docs/prospectus.pptx' },
-  { title: 'Therapy Assessment Camp Registration', date: '12 June 2026', category: 'Therapy', file: '/docs/prospectus.pptx' },
-];
+// Add client notices here when they are ready to publish.
+// Example: { id: 1, title: '', category: '', date: '', pdf: '' }
+export const notices = [];
 
 export const faqs = [
   { q: 'How does admission begin?', a: 'Families can call, WhatsApp or visit the institute. The team conducts an interaction and recommends a suitable education or therapy plan.' },
@@ -236,4 +233,5 @@ export const contactCards = [
   { icon: ClipboardList, title: 'Working Hours', text: 'Monday to Saturday, 9:00 AM - 4:00 PM' },
   { icon: CalendarDays, title: 'Admissions', text: 'Open for school, therapy and teacher training enquiries' },
 ];
+
 
