@@ -236,3 +236,4 @@ export const contactCards = [
   { icon: ClipboardList, title: 'Working Hours', text: 'Monday to Saturday, 9:00 AM - 4:00 PM' },
   { icon: CalendarDays, title: 'Admissions', text: 'Open for school, therapy and teacher training enquiries' },
 ];
+
