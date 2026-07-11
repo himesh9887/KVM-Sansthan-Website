@@ -16,8 +16,10 @@ import { fadeLeft, fadeRight, stagger, viewport } from '@/utils/animations';
 export default function Home() {
   return (
     <>
-      <SEO title="Special School & Teacher Training Institute" description="Karam Manovikas Sansthan is a special school, NGO and professional teacher training institute in Alwar, Rajasthan." />
-      <Hero />
+<SEO
+  title="Karam Manovikas Sansthan | Best Special School, NGO & Teacher Training Institute in Alwar"
+  description="Karam Manovikas Sansthan is the leading Special School, NGO and Teacher Training Institute in Alwar, Rajasthan. We provide special education, therapy services, vocational training, inclusive education and professional teacher training courses."
+/>      <Hero />
       <section className="section-pad bg-background"><Container><Stats /></Container></section>
       <section className="section-pad bg-white">
         <Container className="grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] xl:gap-16">
